@@ -1,0 +1,108 @@
+body {
+    background-color: #f5d9df;
+    font-family: "Nunito", sans-serif;
+}
+
+header {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #ea1c2c;
+}
+
+#mainNavbar .navbar-brand {
+    color: #ea1c2c;
+}
+
+#mainNavbar .navbar-brand em {
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: normal;
+
+}
+
+#headingGroup h1 {
+    font-size: 4rem;
+}
+
+#headingGroup span {
+    color: palevioletred;
+}
+
+.blurb h2 {
+    color: palevioletred;
+    font-weight: 100;
+    font-size: 2.25rem;
+}
+
+.blurb p {
+    margin: 0 5vw;
+    color: #f498b8;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.navbar.scrolled {
+    background-color: palevioletred;
+    transition: background 500ms;
+}
+
+em.em-none {
+    color: transparent;
+    transition: display 500ms;
+}
+
+div > img {
+    padding: 0;
+}
+
+
+
+/* ----------- MEDIA QUIERIES -------------------------------------*/
+
+@media (max-width: 400px) {
+    #mainNavbar .navbar-brand {
+        font-size: 1rem;
+        margin-top: 1vh;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 765px) {
+    #mainNavbar .navbar-brand {
+        font-size: 1.5em;
+        transition: font-size 500ms;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1500px) {
+    #mainNavbar .navbar-brand {
+        font-size: 1.4em;
+        transition: font-size 500ms;
+    }
+    
+    #navLinks {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 1800px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+        transition: font-size 500ms;
+    }
+}
